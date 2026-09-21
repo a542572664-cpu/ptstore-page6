@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Explore football-inspired jerseys, multiple styles and personalized name and number options. Contact us on WhatsApp for product details.">
+  <meta name="description" content="Shop high-quality soccer jerseys in a variety of styles, with personalized name-and-number options. Message us on WhatsApp for product details.">
   <meta name="theme-color" content="#171717">
-  <meta property="og:title" content="EIIiO STORE | Football Jerseys">
-  <meta property="og:description" content="Explore football-inspired jerseys and personalized jersey options. Contact us on WhatsApp for more details.">
-  <title>EIIiO STORE | Football Jerseys</title>
+  <meta property="og:title" content="EIIiO STORE | Soccer Jerseys">
+  <meta property="og:description" content="Shop high-quality soccer jerseys and personalized name-and-number options. Message us on WhatsApp for details.">
+  <title>EIIiO STORE | Soccer Jerseys</title>
   <link rel="stylesheet" href="cookie-consent.css">
   <style>
     :root {
@@ -159,7 +159,7 @@
 
     .hero-stats {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       gap: 8px;
       margin-top: 26px;
     }
@@ -208,6 +208,9 @@
     .product-grid {
       display: grid;
       gap: 18px;
+      width: 100%;
+      max-width: 760px;
+      margin-inline: auto;
     }
 
     .product-card {
@@ -229,29 +232,6 @@
 
     .product-card:hover img { transform: scale(1.012); }
 
-    .product-info { padding: 18px; }
-
-    .product-kicker {
-      margin: 0 0 5px;
-      color: var(--accent);
-      font-size: 0.7rem;
-      font-weight: 900;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-    }
-
-    .product-info h3 {
-      margin: 0;
-      font-size: 1.22rem;
-      letter-spacing: -0.025em;
-    }
-
-    .product-info p {
-      margin: 7px 0 16px;
-      color: var(--muted);
-      font-size: 0.88rem;
-    }
-
     .whatsapp-button {
       display: flex;
       align-items: center;
@@ -272,7 +252,7 @@
 
     .whatsapp-button[href*="wa.me"],
     .whatsapp-button[href*="api.whatsapp.com"],
-    .whatsapp-button[href*="19715072257"] {
+    .whatsapp-button[href*="85291685008"] {
       animation: whatsapp-gentle-shake 4s ease-in-out infinite;
       transform-origin: center;
       will-change: transform, box-shadow;
@@ -406,8 +386,7 @@
       .stat { padding: 18px 12px; }
       .stat strong { font-size: 1.05rem; }
       .catalog { padding: 76px 32px 88px; }
-      .product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; align-items: start; }
-      .product-info { padding: 22px; }
+      .product-grid { grid-template-columns: minmax(0, 1fr); gap: 24px; align-items: start; }
       .benefits-section { padding: 0 32px 88px; }
       .benefits { grid-template-columns: repeat(3, 1fr); }
     }
@@ -437,69 +416,21 @@
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero-inner">
         <p class="eyebrow">New Season Collection</p>
-        <h1 id="hero-title">Live the Game.<br><span>Wear Your Passion.</span></h1>
-        <p class="hero-copy">High-quality soccer jerseys. Find the style you love and message us on WhatsApp to place your order.</p>
-        <a class="whatsapp-button hero-cta" href="https://wa.me/19715072257?text=Hi!%20%F0%9F%91%8B%20I'm%20interested%20in%20your%20football%20jerseys.%20Could%20you%20please%20send%20me%20more%20details%3F%20%E2%9A%BD" target="_blank" rel="noopener">View Catalog on WhatsApp</a>
+        <h1 id="hero-title">The world gets loud.<br><span>Save a quiet moment for yourself.</span></h1>
+        <p class="hero-copy">Find the style you love, and message us on WhatsApp to place your order.</p>
+        <a class="whatsapp-button hero-cta" href="https://wa.me/85291685008?text=Hello!%20I%E2%80%99m%20very%20interested%20in%20your%20products.%20Could%20you%20please%20provide%20me%20with%20more%20detailed%20information%3F" target="_blank" rel="noopener">Browse the Catalog on WhatsApp</a>
         <div class="hero-stats" aria-label="Store services">
-          <div class="stat"><strong>Talk to Us Directly</strong><span>Ask before you buy</span></div>
-          <div class="stat"><strong>Size Guidance</strong><span>Find your ideal fit</span></div>
-          <div class="stat"><strong>Order on WhatsApp</strong><span>Chat with our team</span></div>
+          <div class="stat"><strong>Chat With Us</strong><span>Get answers before you order</span></div>
+          <div class="stat"><strong>Find the Product</strong><span>You Want</span></div>
         </div>
       </div>
     </section>
 
-    <section class="catalog" id="collection" aria-labelledby="collection-title">
-      <div class="section-heading">
-        <h2 id="collection-title">Featured Collection</h2>
-        <p>Tap any green button to ask about styles, sizes, and availability.</p>
-      </div>
-
+    <section class="catalog" id="collection">
       <div class="product-grid">
         <article class="product-card">
           <div class="product-image-wrap">
-            <img src="images/product-01.webp" alt="Premium soccer jersey and EIIiO STORE service information" loading="eager">
-          </div>
-          <div class="product-info">
-            <p class="product-kicker">Premium Gear</p>
-            <h3>High-Quality Soccer Jersey</h3>
-            <p>Comfortable, breathable, and ideal for both game day and everyday wear.</p>
-            <a class="whatsapp-button" href="https://wa.me/19715072257?text=Hi!%20%F0%9F%91%8B%20I'm%20interested%20in%20your%20football%20jerseys.%20Could%20you%20please%20send%20me%20more%20details%3F%20%E2%9A%BD" data-product="Product 01" target="_blank" rel="noopener">Order on WhatsApp</a>
-          </div>
-        </article>
-
-        <article class="product-card">
-          <div class="product-image-wrap">
-            <img src="images/product-02.webp" alt="Assorted soccer jerseys in different colors with close-up construction details" loading="lazy">
-          </div>
-          <div class="product-info">
-            <p class="product-kicker">Styles from Multiple Teams</p>
-            <h3>Soccer Jersey Collection</h3>
-            <p>Explore different teams, colors, and designs to find your favorite jersey.</p>
-            <a class="whatsapp-button" href="https://wa.me/19715072257?text=Hi!%20%F0%9F%91%8B%20I'm%20interested%20in%20your%20football%20jerseys.%20Could%20you%20please%20send%20me%20more%20details%3F%20%E2%9A%BD" data-product="Product 02" target="_blank" rel="noopener">Order on WhatsApp</a>
-          </div>
-        </article>
-
-        <article class="product-card">
-          <div class="product-image-wrap">
-            <img src="images/product-03.webp" alt="Large shipment of soccer jerseys packed and ready to leave the warehouse" loading="lazy">
-          </div>
-          <div class="product-info">
-            <p class="product-kicker">Ready to Ship</p>
-            <h3>In-Stock Selection</h3>
-            <p>Ask our team about current styles, available sizes, and wholesale options.</p>
-            <a class="whatsapp-button" href="https://wa.me/19715072257?text=Hi!%20%F0%9F%91%8B%20I'm%20interested%20in%20your%20football%20jerseys.%20Could%20you%20please%20send%20me%20more%20details%3F%20%E2%9A%BD" data-product="Product 03" target="_blank" rel="noopener">Order on WhatsApp</a>
-          </div>
-        </article>
-
-        <article class="product-card">
-          <div class="product-image-wrap">
-            <img src="images/product-04.webp" alt="Customer service steps and feedback about soccer jerseys" loading="lazy">
-          </div>
-          <div class="product-info">
-            <p class="product-kicker">Customer Favorites</p>
-            <h3>Community Picks</h3>
-            <p>Our customers' favorite styles, backed by friendly, personalized service.</p>
-            <a class="whatsapp-button" href="https://wa.me/19715072257?text=Hi!%20%F0%9F%91%8B%20I'm%20interested%20in%20your%20football%20jerseys.%20Could%20you%20please%20send%20me%20more%20details%3F%20%E2%9A%BD" data-product="Product 04" target="_blank" rel="noopener">Order on WhatsApp</a>
+            <img src="images/product-01.jpg" alt="Premium soccer jersey and EIIiO STORE service information" loading="eager">
           </div>
         </article>
       </div>
@@ -508,7 +439,7 @@
     <section class="benefits-section" aria-label="Benefits of shopping with us">
       <div class="benefits">
         <div class="benefit"><strong>Personalized Service</strong><span>Talk with our team before placing your order.</span></div>
-        <div class="benefit"><strong>Verified Quality</strong><span>We prepare every order with exceptional care.</span></div>
+        <div class="benefit"><strong>Verified Quality</strong><span>Every order is prepared with exceptional care.</span></div>
         <div class="benefit"><strong>International Shipping</strong><span>Ask us about delivery options in your region.</span></div>
       </div>
     </section>
@@ -517,7 +448,7 @@
   <footer>
     <div class="footer-inner">
       <span>© <span id="year"></span> EIIiO STORE</span>
-      <span>Premium soccer jerseys. Direct support.</span>
+      <span>Premium soccer jerseys with personalized support.</span>
       <nav class="footer-links" aria-label="Legal and privacy information">
         <a href="privacy.html">Privacy Policy</a>
         <a href="cookies.html">Cookie Policy</a>
@@ -528,12 +459,6 @@
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
-
-    document.querySelectorAll("[data-product]").forEach(function (button) {
-      var product = button.getAttribute("data-product");
-      var message = "Hi! 👋 I'm interested in your football jerseys. Could you please send me more details? ⚽";
-      button.href = "https://wa.me/19715072257?text=" + encodeURIComponent(message);
-    });
   </script>
   <script src="cookie-consent.js" data-meta-pixel-id="1118450853846312" defer></script>
 </body>
