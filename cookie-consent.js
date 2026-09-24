@@ -77,7 +77,7 @@
 
     createMetaPixelQueue();
     window.fbq("consent", "grant");
-    window.fbq("init", pixelId);
+    window.fbq('init', '1075165522049232');
     pixelInitialized = true;
 
     if (!document.getElementById("meta-pixel-script")) {
@@ -89,7 +89,7 @@
     }
 
     if (!pageViewSent) {
-      window.fbq("track", "PageView");
+      window.fbq('track', 'PageView');
       pageViewSent = true;
     }
   }
