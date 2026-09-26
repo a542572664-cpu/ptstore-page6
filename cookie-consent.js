@@ -7,7 +7,6 @@
   var pixelId = scriptElement ? scriptElement.getAttribute("data-meta-pixel-id") : "";
   var marketingAllowed = false;
   var pixelInitialized = false;
-  var pageViewSent = false;
   var lastFocusedElement = null;
 
   function readPreference() {
@@ -40,29 +39,6 @@
     closeConsentDialog();
   }
 
-  function createMetaPixelQueue() {
-    if (window.fbq) {
-      return;
-    }
-
-    var fbq = window.fbq = function () {
-      if (fbq.callMethod) {
-        fbq.callMethod.apply(fbq, arguments);
-      } else {
-        fbq.queue.push(arguments);
-      }
-    };
-
-    if (!window._fbq) {
-      window._fbq = fbq;
-    }
-
-    fbq.push = fbq;
-    fbq.loaded = true;
-    fbq.version = "2.0";
-    fbq.queue = [];
-  }
-
   function loadMetaPixel() {
     if (!marketingAllowed || !pixelId) {
       return;
@@ -75,22 +51,9 @@
       return;
     }
 
-    createMetaPixelQueue();
-    window.fbq("consent", "grant");
-    window.fbq('init', '1075165522049232');
-    pixelInitialized = true;
-
-    if (!document.getElementById("meta-pixel-script")) {
-      var metaScript = document.createElement("script");
-      metaScript.id = "meta-pixel-script";
-      metaScript.async = true;
-      metaScript.src = "https://connect.facebook.net/en_US/fbevents.js";
-      document.head.appendChild(metaScript);
-    }
-
-    if (!pageViewSent) {
-      window.fbq('track', 'PageView');
-      pageViewSent = true;
+    if (typeof window.loadMetaPixelBase === "function") {
+      window.loadMetaPixelBase();
+      pixelInitialized = Boolean(window.fbq);
     }
   }
 

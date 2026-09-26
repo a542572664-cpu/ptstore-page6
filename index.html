@@ -411,8 +411,29 @@
       .whatsapp-button { animation: none !important; }
     }
   </style>
+  <!-- Meta Pixel Code -->
+  <script>
+    window.loadMetaPixelBase = function () {
+      if (window.__metaPixelBaseLoaded) return;
+      window.__metaPixelBaseLoaded = true;
+
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('consent', 'grant');
+      fbq('init', '1364547125062669');
+      fbq('track', 'PageView');
+    };
+  </script>
+  <!-- End Meta Pixel Code -->
 </head>
 <body>
+  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1364547125062669&amp;ev=PageView&amp;noscript=1" alt=""></noscript>
   <header class="site-header">
     <a class="brand" href="#top" aria-label="EIIiO STORE home">
       <span class="brand-mark">PT</span>
@@ -472,6 +493,6 @@
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
-  <script src="cookie-consent.js" data-meta-pixel-id="1075165522049232" defer></script>
+  <script src="cookie-consent.js" data-meta-pixel-id="1364547125062669" defer></script>
 </body>
 </html>
